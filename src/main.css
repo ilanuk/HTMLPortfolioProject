@@ -1,91 +1,122 @@
-html, body, h1, h2, h3, h4, p, div, ul, ol, li {
-  padding: 0;
-  border: 0;
+*, *:before, *:after {
+  box-sizing: border-box;
   margin: 0;
-  font: inherit;
-  font-size: 100%;
+  padding: 0;
 }
-h1 {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 70px;
-  font-weight: bold;
-  text-align: center;
+
+body {
+  background: #F5F5F5;
+  color: #444;
+  font-family: "Helvetica Neue", Arial, serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  font-weight: 200;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
-h2 {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 30px;
-  font-weight: 100;
-  text-align: center;
-  color: #ffffff;
-  width: 700px;
-  margin: 0 auto 0 auto;
+
+h1, h2, h3, h4 {
+  margin: 10px 0 15px;
 }
-h2 strong {
-  font-weight: 400;
+
+p, ul {
+  margin: 10px 0;
 }
-.header {
-  background-color: #999999;
+
+ul li {
+  margin-left: 30px;;
 }
-h3 {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 28px;
-  font-weight: normal;
-  text-align: center;
-  border-bottom: 1px solid #555555;
-  margin: 20px 0 20px 0;
-}
-p {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 18px;
-}
-.skills  p, .tagline p {
-  padding: 5px 5px 5px 5px;
-  margin: 0px 0px 15px 10px;
-}
+
 a {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: bold;
+  color: #00b8d4;
+  font-weight: 600;
   text-decoration: none;
-  color: #000000;
+  border-bottom: 3px solid #00b8d4;
+  padding: 3px;
 }
+
 a:hover {
-  color: #aa0000;
-  text-decoration: underline;
+  background-color: #00b8d4;
+  color: white;
 }
-.tagline {
-  background-color: #AAFFFF;
-  padding: 20px 0 20px 0;
+
+a:active {
+  position: relative;
+  top: 1px;
 }
-.projects, .badges, .articles, .skills {
-  width: 700px;
+
+.content-wrapper {
+  line-height: 1.4;
   margin: 0 auto;
+  max-width: 900px;
+  padding: 30px 25px;
 }
-.projects ul, .badges ul, .articles ul, .skills ul {
-  list-style-type: none;
-}
-.projects li, .badges li, .articles li, .skills li {
-  margin-bottom: 10px;
-}
-.badges img {
-  float: left;
-  padding-right: 10px;
-}
-.skills {
-  margin-bottom: 20px;
-}
-.skills li {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: bold;
-  background-color: #444444;
-  color: #cccccc;
-  display: inline;
-  padding: 8px 8px 8px 8px;
-  margin-right: 10px;
-}
-.footer {
-  background-color: #999999;
+
+/*
+ * HEADER
+ */
+
+.header {
+  align-items: center;
+  background-color: #EFEFEF;
+  background-image: url('bg.jpg');
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border-top: 4px solid #e91e63;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  justify-content: center;
+  min-height: 250px;
+  padding: 0 20px;
+  position: relative;
   text-align: center;
-  padding: 20px 0 20px 0;
+}
+
+@media only screen and (max-device-width: 420px)  {
+  .header {
+    background-size: auto 100%;
+  }
+}
+
+.header:before {
+  background: rgba(0, 0, 0, .7);
+  bottom: 0;
+  content: ' ';
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.header * {
+  position: relative;
+  z-index: 2;
+  text-shadow: 1px 1px 10px black;
+}
+
+.header h1 {
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.header h2 {
+  font-size: 2.1rem;
+  font-weight: 100;
+  margin: 5px 0;
+}
+
+/*
+ * SKILLS
+ */
+
+.skills {
+  background: #7777FF;
+  color: white;
 }
 
