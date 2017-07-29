@@ -38,6 +38,10 @@ p {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
 }
+.skills  p, .tagline p {
+  padding: 5px 5px 5px 5px;
+  margin: 0px 0px 15px 10px;
+}
 a {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px;
